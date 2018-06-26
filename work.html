@@ -1,0 +1,283 @@
+<html lang="en">
+  <head>
+    <title>Andrew Kersey</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+
+    <link href='http://fonts.googleapis.com/css?family=Nunito:300,400,700' rel='stylesheet' type='text/css'>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Nunito:300,400,700' rel='stylesheet' type='text/css'>
+    <link href="less/bootstrap1.less" rel="stylesheet/less" media="screen">
+    <script src="js/bootstrap.js"></script> 
+    <script src="js/less.js"></script> 
+    <script src='scrollIt.min.js' type='text/javascript'></script> 
+
+  </head>
+
+
+  <script>
+
+    $(function(){
+
+      $(".spot-hover").mouseenter(function(){
+      $(".hover-text").show();
+      });
+  
+    });
+
+</script> 
+
+  
+  <style type="text/css">
+
+  body{
+    font-family: 'Nunito', sans-serif;
+  }
+
+  .nav-wrap{
+    height: 65px;
+    border-bottom: thin solid #dbdcde;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+  }
+
+  .navbar-right{
+    margin-right: 30px !important;
+  }
+
+  .row{
+    margin: 0px;
+  }
+
+  .yo{
+    margin-top: 22px;
+  }
+
+  .nav-margin{
+    margin-left: 20px;
+  }
+
+  .name-wrap{
+    color: #ec6f4f !important;
+    font-size: 21px !important;
+    -webkit-transition:color 1s ease-in;
+    margin-left: 50px;
+  }
+
+  a{
+  text-decoration: none !important;
+  color: #A7A9AB;
+}
+
+  a:hover{
+   -webkit-transition: color .25s ease-in;
+   color: #ec6f4f !important; 
+   cursor: hand;
+}
+
+.spots:hover{
+    opacity: 0.3;
+   transition: opacity .35s ease-in-out;
+   -moz-transition: opacity .35s ease-in-out;
+   -webkit-transition: opacity .35s ease-in-out;
+}
+
+.title{
+  font-size: 21px;
+  font-weight: 300;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.second-row{
+  margin-top: 10px;
+}
+
+.spots{
+  overflow: hidden;
+  -webkit-box-shadow:  0px 4px 6px 2px rgba(3, 3, 3, 0.2);
+  box-shadow:  0px 4px 6px 2px rgba(3, 3, 3, 0.2);
+  text-align: center;
+  background: #fff;
+}
+
+.spots img{
+  opacity: 1.0;
+  position: relative;
+}
+
+img{
+  max-width: 100%;
+}
+
+#footer-button{ 
+  margin-right: 37px !important;
+}
+
+#button-text{
+  color: #A7A9AB;
+  font-size: 18px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 300;
+  margin-left: 44px;
+  padding-top: 17px;
+}
+
+.footer-left{
+  margin-left: 30px;
+  color: #A7A9AB;
+  font-size: 16px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 300;
+  margin-top: 88px;
+}
+
+#foot{
+  width: 100%;
+  background: #58585B;
+  height: 178px;
+  margin-top: 60px;
+}
+
+#footer-button{
+  background: #424244;
+  width: 245px;
+  height: 55px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  margin-top: 65px;
+  margin-right: 30px; 
+}
+
+.hover-text{
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  color: rgba(1, 1, 1, 1) !important;
+  font-size: 36px;
+  z-index: 100;
+  display: none;
+}
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 992px){
+  .top-wrap{
+  padding-top: 30px;
+}
+
+.spacing{
+  margin-bottom: 30px;
+}
+
+.footer-left{
+  display: none;
+}
+}
+
+@media (max-width: 768px){
+  .spots{
+    max-width: 600px;
+    text-align: center;
+  }
+
+
+}
+
+
+
+  </style>
+
+  <body>
+        <nav class="navbar navbar-default" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex5-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="#" class="navbar-brand name-wrap active" data-scroll-nav='0'>Andrew<span style="font-weight: 400">Kersey</span></a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex5-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="work.html">Work</a></li> 
+            <li><a href="contact.html" class='scroll_to' nav='0'>Contact</a></li>  
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </nav> 
+
+      <!-- END NAVBAR -->
+
+    <div class="container">
+      <div class="title col-md-12 text-center">Work</div> 
+      <div class="row">
+        <div class="col-sm-3 spacing">
+          <div class="spots spot-hover"> 
+            <div class="hover-text text-center">Hello</div> 
+              <img src="images/tn-one_smart.png">
+          </div> 
+        </div>
+        <div class="col-sm-3 spacing">
+          <div class="spots">
+            <img src="images/tn-life_aquatic.png">
+          </div>
+        </div>
+        <div class="col-sm-3 spacing">
+          <div class="spots">
+            <img src="images/tn-inner_circle.jpg">
+          </div>
+        </div>
+        <div class="col-sm-3 ">
+          <div class="spots">
+            <img src="images/tn-skyboxx.jpg">
+          </div>
+        </div>
+    </div>
+    <div class="row second-row">    
+        <div class="col-sm-3 spacing">
+          <div class="spots">
+            <img src="images/unibel.jpg">
+          </div>
+        </div>
+        <div class="col-sm-3 spacing">
+          <div class="spots">
+            <img src="images/unibel.jpg">
+          </div>
+        </div>
+        <div class="col-sm-3 spacing">
+          <div class="spots">
+            <img src="images/unibel.jpg">
+          </div>
+        </div>
+        <div class="col-sm-3 spacing">
+          <div class="spots">
+            <img src="images/unibel.jpg">
+          </div>
+        </div>
+    </div>
+    </div>
+        <div id='foot'>
+          <div class="footer-left pull-left">Andrew Kersey Design 2013</div>
+              <div class="footer-right pull-right">
+                <div id="footer-button">
+                  <div id="button-text"><a href="#" class="footer-link">Let's start a project!</a></div>
+                </div>
+              </div>      
+        </div>
+
+  
+
+
+
+  </body>
+</html>
+
+
+
+

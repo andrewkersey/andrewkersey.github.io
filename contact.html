@@ -1,0 +1,253 @@
+<html lang="en">
+  <head>
+    <title>Andrew Kersey</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+
+    <link href='http://fonts.googleapis.com/css?family=Nunito:300,400,700' rel='stylesheet' type='text/css'>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Nunito:300,400,700' rel='stylesheet' type='text/css'>
+    <link href="less/bootstrap1.less" rel="stylesheet/less" media="screen">
+    <script src="js/bootstrap.js"></script> 
+    <script src="js/less.js"></script> 
+    <script src='scrollIt.min.js' type='text/javascript'></script> 
+  </head>
+
+<script>
+
+    $(function(){
+
+    $(".icons").mouseenter(function(){
+      $(this).animate({"marginTop": "+=8px"}, "fast");
+    });
+
+    $(".icons").mouseleave(function(){
+      $(this).animate({"marginTop": "-=8px"}, "fast");
+    });
+  
+  });
+
+</script>
+
+  
+  <style type="text/css">
+
+  .nav-wrap{
+    height: 65px;
+    border-bottom: thin solid #dbdcde;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+    font-size: 14px; 
+  }
+
+  .navbar-right{
+    margin-right: 30px !important;
+  }
+
+  .row{
+    margin: 0px;
+  }
+
+  .yo{
+    margin-top: 22px;
+  }
+
+  .nav-margin{
+    margin-left: 20px;
+  }
+
+  .name-wrap{
+    color: #ec6f4f !important;
+    font-size: 21px !important;
+    -webkit-transition:color 1s ease-in;
+    margin-left: 50px;
+  }
+
+  a{
+  text-decoration: none !important;
+  color: #A7A9AB;
+}
+
+  a:hover{
+   -webkit-transition: color .25s ease-in;
+   color: #ec6f4f !important; 
+   cursor: hand;
+}
+
+#footer-button{ 
+  margin-right: 37px !important;
+}
+
+#button-text{
+  color: #A7A9AB;
+  font-size: 18px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 300;
+  margin-left: 44px;
+  padding-top: 17px;
+}
+
+.footer-left{
+  margin-left: 30px;
+  color: #A7A9AB;
+  font-size: 16px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 300;
+  margin-top: 88px;
+}
+
+#foot{
+  width: 100%;
+  background: #58585B;
+  height: 178px;
+}
+
+#footer-button{
+  background: #424244;
+  width: 245px;
+  height: 55px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  margin-top: 65px;
+  margin-right: 30px; 
+}
+
+.work-title{
+  font-family: 'Nunito', sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  margin-top: 30px;
+  color: #646668;
+}
+
+.box-one{
+  background: #f1a485;
+  height: 200px;
+  border-bottom: 5px solid #db8a75;
+}
+
+.box-two{
+  background: #e2797a;
+  height: 200px;
+  border-bottom: 5px solid #bc5a64;
+}
+
+.box-three{
+  background: #85cba1;
+  height: 200px;
+  border-bottom: 5px solid #70b48d;
+}
+
+.box-four{
+  background: #b29cc5;
+  height: 200px;
+  border-bottom: 5px solid #9f8ab6;
+}
+
+.title{
+  margin-top: 40px;
+}
+
+.second-row{
+  margin-top: 9px;
+  margin-bottom: 125px;
+}
+
+.row{
+  margin-left: -20px;
+}
+
+.email-icon{
+  margin-top: 63px;
+}
+
+.phone-icon{
+  margin-top: 52px;
+}
+
+.location-icon{
+  margin-top: 54px;
+}
+
+.dribbble-icon{
+  margin-top: 52px;
+}
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 992px){
+  .top-wrap{
+  padding-top: 30px;
+}
+
+.footer-left{
+  display: none;
+}
+
+.second-row{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+}
+
+  </style>
+
+  <body>
+        <nav class="navbar navbar-default" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex5-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="#" class="navbar-brand name-wrap active" data-scroll-nav='0'>Andrew<span style="font-weight: 400">Kersey</span></a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex5-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="work.html">Work</a></li> 
+            <li><a href="contact.html" class='scroll_to' nav='0'>Contact</a></li>  
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </nav>
+      <div class="container">
+        <div class="work-title text-center">Ready to get started?</div> 
+          <div class="row title">
+            <div class="col-md-offset-3 col-md-3 text-center">
+              <div class="box-one"><a href="mailto:andrewkersey@gmail.com" target="_top"><img src="images/email-icon.png" class="email-icon icons"></a></div>
+            </div>
+            <div class="col-md-3 text-center"> 
+              <div class="box-two"><img src="images/phone-icon.png" class="phone-icon icons"></div>
+            </div>
+          </div>
+          <div class="row second-row">
+            <div class="col-md-offset-3 col-md-3 text-center">
+                <div class="box-three"><a target="blank" href="https://maps.google.com/maps?q=huntington+beach&ll=33.660353,-117.998657&spn=1.408208,2.458191&hnear=Huntington+Beach,+Orange,+California&gl=us&t=h&z=9"><img src="images/location-icon.png" class="location-icon icons"></div>
+            </div>
+            <div class="col-md-3 text-center"> 
+              <div class="box-four"><a target="blank" href="http://dribbble.com/andrewkersey"><img src="images/dribbble-icon.png" class="dribbble-icon icons"></a></div> 
+            </div>
+        </div>
+      </div>
+
+
+  
+
+
+
+
+
+           <div id='foot'>
+          <div class="footer-left pull-left">Andrew Kersey Design 2013</div>
+              <div class="footer-right pull-right">
+                <div id="footer-button">
+                  <div id="button-text"><a href="#" class="footer-link">Let's start a project!</a></div>
+                </div>    
+         </div>
+  </body>
+</html>  
