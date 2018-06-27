@@ -20,9 +20,9 @@
 
     <link href="css/main.css" rel="stylesheet" media="screen">
 
-    <link href='http://fonts.googleapis.com/css?family=Nunito:200,300,400,700' rel='stylesheet' type='text/css'>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <link href='http://fonts.googleapis.com/css?family=Nunito:300,400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Nunito:200,300,400,700' rel='stylesheet' type='text/css'>
+
+    <script src="js/scrollIt.min.js"></script>
     <script src="js/main.js"></script>
 
 
@@ -34,19 +34,6 @@
   </head>
 
 
-  <script>
-
-    $(function(){
-
-      $(".spot-hover").mouseenter(function(){
-      $(".hover-text").show();
-      });
-  
-    });
-
-</script> 
-
-  
   <style type="text/css">
 
   body{
@@ -54,18 +41,23 @@
   }
 
 
-
-
-
-
-
-
-
-.spots:hover{
-    opacity: 0.3;
-   transition: opacity .35s ease-in-out;
-   -moz-transition: opacity .35s ease-in-out;
-   -webkit-transition: opacity .35s ease-in-out;
+.spots:hover img {
+    opacity: 0.2;
+}
+.hover-text {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  padding: 10px;
+  opacity: 0;
+  color: #212529;
+}
+.spots:hover .hover-text {
+  opacity: 1;
+  transition: opacity .35s ease-in-out;
+  -moz-transition: opacity .35s ease-in-out;
+  -webkit-transition: opacity .35s ease-in-out;
+  color: #212529;
 }
 
 .title{
@@ -86,13 +78,17 @@
   overflow: hidden;
   -webkit-box-shadow:  0px 4px 6px 2px rgba(3, 3, 3, 0.2);
   box-shadow:  0px 4px 6px 2px rgba(3, 3, 3, 0.2);
-  text-align: center;
   background: #fff;
+  cursor: pointer;
+  display: block;
 }
 
 .spots img{
-  opacity: 1.0;
+  opacity: 1;
   position: relative;
+  transition: opacity .35s ease-in-out;
+  -moz-transition: opacity .35s ease-in-out;
+  -webkit-transition: opacity .35s ease-in-out;
 }
 
 img{
@@ -178,13 +174,17 @@ footer{
       <!-- END NAVBAR -->
 
     <div class="container">
-      <div class="title col-md-12 text-center">Work</div> 
+      <div class="title col-md-12 text-center">Work</div>
 
       <div class="row">
         <div class="col-sm-3 spacing">
-          <div class="spots spot-hover"> 
+          <a class="spots" href="#workModal" data-src="images/tn-one_smart.png" data-title="One Smart Menu" data-toggle="modal">
               <img src="images/tn-one_smart.png">
-          </div> 
+              <div class="hover-text">
+                <strong>One Smart Menu:</strong>
+                <p>Logo and website design.</p>
+              </div>
+          </a>
         </div>
 
         <div class="col-sm-3 spacing">
@@ -209,9 +209,9 @@ footer{
 
     <div class="row second-row">
         <div class="col-sm-3 spacing">
-          <div class="spots spot-hover"> 
+          <div class="spots">
               <img src="images/tn-one_smart.png">
-          </div> 
+          </div>
         </div>
 
         <div class="col-sm-3 spacing">
@@ -235,9 +235,9 @@ footer{
 
     <div class="row third-row">
         <div class="col-sm-3 spacing">
-          <div class="spots spot-hover"> 
+          <div class="spots">
               <img src="images/tn-one_smart.png">
-          </div> 
+          </div>
         </div>
 
         <div class="col-sm-3 spacing">
@@ -259,7 +259,21 @@ footer{
       </div>
     </div>
 
- 
+
+  </div>
+
+  <div class="modal fade" id="workModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalLabel"></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center"><img class="w-100" src="" alt=""></div>
+      </div>
+    </div>
   </div>
 
 
@@ -279,7 +293,3 @@ footer{
     </footer>
   </body>
 </html>
-
-
-
-
